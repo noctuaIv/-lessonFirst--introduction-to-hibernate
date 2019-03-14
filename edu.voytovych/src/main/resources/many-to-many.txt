@@ -1,0 +1,11 @@
+role.cfg.xml
+<set name="users" table="user_role">
+	<key column="role_id" />
+	<many-to-many column="user_id" class="User" />
+</set>
+
+user.cfg.xml
+<set name="reles" table="user_role">
+	<key colum="role_id" />
+	<many-to-many column="user_id" class="User" />
+</set>
